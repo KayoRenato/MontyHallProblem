@@ -17,3 +17,10 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+:root{
+  --area-door-height: 400px;
+  --area-door-width: 200px;
+  --color-door: rgb(227, 126, 54);
+  --color-ground: rgb(206, 203, 201);
+}

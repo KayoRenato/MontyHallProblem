@@ -1,9 +1,11 @@
+import Door from "../components/Door";
 import Present from "../components/present";
 
 export default function Home() {
   return (
-    <div>
-      <Present />
+    <div style={{display: 'flex'}}>
+      <Door />
+      <Door />
     </div>
   );
 }
