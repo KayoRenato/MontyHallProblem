@@ -1,11 +1,14 @@
+import { useState } from "react";
 import Door from "../components/Door";
 import Present from "../components/present";
+import DoorModel from "../model/door";
 
 export default function Home() {
+  const [d1, setD1] = useState(new DoorModel(1))
+
   return (
     <div style={{display: 'flex'}}>
-      <Door />
-      <Door />
+      <Door value={d1} />
     </div>
   );
 }

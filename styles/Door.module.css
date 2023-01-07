@@ -49,6 +49,22 @@
     background-color: brown;
 }
 .doorHandle:hover{
-    background-color: rgb(236, 242, 73);
     cursor: pointer;
+}
+
+.selected {
+    border-left: 5px solid  rgb(236, 242, 73);;
+    border-top: 5px solid  rgb(236, 242, 73);;
+    border-right: 5px solid  rgb(236, 242, 73);;
+    
+    
+}
+
+.selected .number {
+    color: rgb(236, 242, 73);
+}
+
+.selected .doorHandle {
+    background-color: rgb(236, 242, 73);
+
 }
