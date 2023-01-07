@@ -29,14 +29,17 @@ export default class DoorModel {
         return this.#isOpen;
     }
 
+    markOff(){
+        return new DoorModel(this.number, this.hasPresent, false, this.isOpen)
+    }
+
     changeSelected() {
         const selected = !this.isSelected;
         return new DoorModel(this.number, this.hasPresent, selected, this.isOpen)
     }
 
     toOpen() {
-        const isOpen = true;
-        return new DoorModel(this.number, this.hasPresent, this.isSelected, isOpen)
+        return new DoorModel(this.number, this.hasPresent, this.isSelected, true)
     }
 
 
