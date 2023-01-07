@@ -35,7 +35,7 @@ export default class DoorModel {
     }
 
     toOpen() {
-        const isOpen = !this.isOpen;
+        const isOpen = true;
         return new DoorModel(this.number, this.hasPresent, this.isSelected, isOpen)
     }
 
