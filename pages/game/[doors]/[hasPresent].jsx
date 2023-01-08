@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/rules-of-hooks */
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
@@ -13,11 +14,11 @@ export default function game() {
     const router = useRouter()
 
     const [doors, setDoors] = useState([])
-
+    
     useEffect(() => {
         setDoors(createDoor(+router.query.doors, +router.query.hasPresent))
     }, [router?.query])
-    
+
 
     function renderDoors() {
         return doors.map(door => {

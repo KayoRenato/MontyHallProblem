@@ -21,14 +21,14 @@
 .button button{ 
     padding: 6px 32px;
     border-radius: 4px;
-    background-color: lightskyblue;
+    background-color: #28a085;
     font-size: 1rem;
-    border: 2px solid #222;
-    color: #222;
+    border: none;
+    color: rgb(7, 71, 7);
 }
 
 .button button:hover{
-    background-color: rgb(86, 151, 192);
+    background-color: #258c75;
     color: aliceblue;
     font-weight: bold;
     border: 2px solid aliceblue;

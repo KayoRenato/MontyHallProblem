@@ -1,0 +1,38 @@
+.NumberInput {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    color: #555;
+    font-size: 2rem
+}
+
+.value {
+    margin: 2rem;
+    font-size: 6rem;
+}
+
+.button {
+    display: flex;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    height: 48px;
+    width: 48px;
+    margin: 8px;
+    border: none;
+    cursor: pointer;
+
+}
+
+.btn:hover {
+    background-color: #b9b9b9;
+}
