@@ -1,0 +1,36 @@
+#game {
+    display: flex;
+    flex-direction: column;
+}
+
+.doors {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.button {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 16px;
+    margin-left: 16px;
+
+}
+
+.button button{ 
+    padding: 6px 32px;
+    border-radius: 4px;
+    background-color: lightskyblue;
+    font-size: 1rem;
+    border: 2px solid #222;
+    color: #222;
+}
+
+.button button:hover{
+    background-color: rgb(86, 151, 192);
+    color: aliceblue;
+    font-weight: bold;
+    border: 2px solid aliceblue;
+    cursor: pointer;
+}

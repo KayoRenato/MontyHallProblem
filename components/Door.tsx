@@ -1,5 +1,6 @@
 import styles from '../styles/Door.module.css'
 import DoorModel from '../model/door'
+import Present from '../components/Present'
 
 interface DoorProps {
     value: DoorModel
@@ -14,7 +15,8 @@ export default function Door(props: DoorProps) {
     const changeSelection = e => props.onChange(value.changeSelected())
     const open = e => {
         e.stopPropagation()
-        props.onChange(value.toOpen())}
+        props.onChange(value.toOpen())
+    }
 
     function renderDoor() {
         return (
@@ -30,7 +32,10 @@ export default function Door(props: DoorProps) {
     return (
         <div className={styles.area} onClick={changeSelection}>
             <div className={`${styles.structure} ${selected}`}>
-                {value.isOpen ? false : renderDoor()}
+                {!value.isOpen ?
+                    renderDoor() :
+                    value.hasPresent ? <Present /> : false
+                }
             </div>
             <div className={styles.ground}>
 
