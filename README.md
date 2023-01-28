@@ -6,6 +6,10 @@ The Monty Hall Problem gets its name from the TV game show, Let's Make A Deal ho
 
 Yes, switching the door increases your probability of winning.
 
+### Deploy
+
+https://montyhall.kayoio.com.br/
+
 ## Code
 
 #### 1. Build the code
